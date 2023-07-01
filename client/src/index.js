@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import App from './App'
 import authReducer from 'state'
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { Provider, provider } from 'react-redux'
 import {
   persistStore,
@@ -35,7 +35,7 @@ const store = configureStore({
     })
 })
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -44,5 +44,5 @@ root.render(
       </PersistGate>
     </Provider>
   </React.StrictMode>
-);
+)
 
